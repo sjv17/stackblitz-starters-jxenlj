@@ -1,3 +1,5 @@
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:3001665355.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:3973260216.
 package com.example.tasko.controller;
 
 import com.example.tasko.model.Task;
@@ -113,8 +115,39 @@ public class UserController {
         return "redirect:/tasks"; 
     }
 
-    // other controller methods...
+    @GetMapping("/users")
+    public String listUsers(Model model, Authentication authentication) {
+        String username = authentication.getName();
+        User user = userService.getUserByUsername(username);
+        if (user.getRole() == UserRole.ADMIN) {
+            model.addAttribute("users", userService.getAllUsers());
+            return "users"; 
+        } else {
+            return "redirect:/tasks"; 
+        }
+    }
 
+    @GetMapping("/users/{id}/edit")
+    public String editUserForm(@PathVariable("id") Long userId, Model model, Authentication authentication) {
+        String username = authentication.getName();
+        User currentUser = userService.getUserByUsername(username);
+        if (currentUser.getRole() == UserRole.ADMIN) {
+            User user = userService.getUserById(userId);
+            model.addAttribute("user", user);
+            model.addAttribute("enterprises", enterpriseService.getAllEnterprises());
+            model.addAttribute("roles", UserRole.values());
+            return "edit-user";
+        } else {
+            return "redirect:/tasks"; 
+        }
+    }
 
+    @PostMapping("/users/{id}/edit")
+    public String updateUser(@PathVariable("id") Long userId, @ModelAttribute("user") User user, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()) {
+            return "edit-user";
+        }
+        userService.updateUser(user);
+        return "redirect:/users";
     }
 }
