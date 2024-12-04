@@ -4,6 +4,7 @@ import com.example.tasko.model.Attendance;
 import com.example.tasko.model.Enterprise;
 import com.example.tasko.model.User;
 import com.example.tasko.repository.AttendanceRepository;
+import com.example.tasko.util.AttendanceStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,6 +13,7 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @Service
 public class AttendanceService {
@@ -21,15 +23,25 @@ public class AttendanceService {
 
     @Transactional
     public Attendance logAttendance(Attendance attendance) {
-        // Check if attendance already exists for the day
-        Attendance existingAttendance = attendanceRepository.findByUserAndDate(
-            attendance.getUser(), attendance.getDate());
-        
-        if (existingAttendance != null) {
-            existingAttendance.setStatus(attendance.getStatus());
-            return attendanceRepository.save(existingAttendance);
+        if (attendance.getUser() == null || attendance.getDate() == null) {
+            throw new IllegalArgumentException("User and date are required for attendance logging.");
         }
-        
+
+        if (!AttendanceStatus.isValid(attendance.getStatus())) {
+            throw new IllegalArgumentException("Invalid attendance status provided.");
+        }
+
+        Optional<Attendance> existingAttendance = attendanceRepository.findByUserAndDate(
+                attendance.getUser(), attendance.getDate());
+
+        if (existingAttendance.isPresent()) {
+            Attendance attendanceToUpdate = existingAttendance.get();
+            attendanceToUpdate.setStatus(attendance.getStatus());
+            attendanceToUpdate.setCheckInTime(attendance.getCheckInTime());
+            attendanceToUpdate.setCheckOutTime(attendance.getCheckOutTime());
+            return attendanceRepository.save(attendanceToUpdate);
+        }
+
         return attendanceRepository.save(attendance);
     }
 
@@ -46,11 +58,11 @@ public class AttendanceService {
     }
 
     public long countTodayAttendanceByEnterprise(Enterprise enterprise) {
-        return attendanceRepository.countByUserEnterpriseAndDate(enterprise, LocalDate.now());
+        return attendanceRepository.countByuser_enterpriseAndDate(enterprise, LocalDate.now());
     }
 
     public List<Attendance> getRecentAttendanceByEnterprise(Enterprise enterprise) {
-        return attendanceRepository.findTop5ByUserEnterpriseOrderByDateDesc(enterprise);
+        return attendanceRepository.findTop5Byuser_enterpriseOrderByDateDesc(enterprise);
     }
 
     public Attendance getTodayAttendance(User user) {
@@ -59,7 +71,7 @@ public class AttendanceService {
 
     @Transactional(readOnly = true)
     public List<Attendance> getTodayAttendanceRecords(Enterprise enterprise) {
-        return attendanceRepository.findByUserEnterpriseAndDate(enterprise, LocalDate.now());
+        return attendanceRepository.findByuser_enterpriseAndDate(enterprise, LocalDate.now());
     }
 
     @Transactional(readOnly = true)
@@ -68,8 +80,7 @@ public class AttendanceService {
         LocalDate startOfMonth = today.withDayOfMonth(1);
         LocalDate endOfMonth = today.withDayOfMonth(today.lengthOfMonth());
         
-        List<Attendance> attendanceList = attendanceRepository.findByUserAndDateBetween(
-            null, startOfMonth, endOfMonth);
+        List<Attendance> attendanceList = attendanceRepository.findByDateBetween(startOfMonth, endOfMonth);
 
         Map<String, Object> calendarData = new HashMap<>();
         calendarData.put("attendance", attendanceList);

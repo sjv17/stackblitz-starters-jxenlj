@@ -12,6 +12,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.example.tasko.exception.TaskNotFoundException;
+import com.example.tasko.exception.InvalidTaskException;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -47,43 +50,55 @@ public class TaskService {
     }
 
     public Task getTaskById(Long id) {
-        return taskRepository.findById(id).orElse(null);
+        return taskRepository.findById(id)
+                .orElseThrow(() -> new TaskNotFoundException("Task not found with id: " + id));
     }
 
     @Transactional
     public Task createTask(Task task) {
+        if (task.getTitle() == null || task.getTitle().isEmpty()) {
+            throw new InvalidTaskException("Task title cannot be empty");
+        }
         return taskRepository.save(task);
     }
 
     @Transactional
     public Task updateTask(Task task) {
-        Optional<Task> existingTask = taskRepository.findById(task.getId());
-        if (existingTask.isPresent()) {
+        if (task.getId() == null) {
+            throw new InvalidTaskException("Task ID cannot be null for update");
+        }
+        if (task.getTitle() == null || task.getTitle().isEmpty()) {
+            throw new InvalidTaskException("Task title cannot be empty");
+        }
+        Optional<Task> existingTask = taskRepository.findById(task.getId());       
+        if (existingTask.isPresent()) {            
             Task updatedTask = existingTask.get();
             updatedTask.setTitle(task.getTitle());
             updatedTask.setDescription(task.getDescription());
             updatedTask.setDueDate(task.getDueDate());
             updatedTask.setCompleted(task.isCompleted());
-            updatedTask.setAssignedUsers(task.getAssignedUsers());
+            if (task.getAssignedUsers() != null) {
+                updatedTask.setAssignedUsers(task.getAssignedUsers());
+            }
             return taskRepository.save(updatedTask);
         }
-        return null;
+        throw new TaskNotFoundException("Task not found with id: " + task.getId());
     }
 
     @Transactional
     public void deleteTask(Long id) {
-        taskRepository.deleteById(id);
+        if (!taskRepository.existsById(id)) {
+            throw new TaskNotFoundException("Task not found with id: " + id);
+        }
+        taskRepository.deleteById(id); 
     }
 
     @Transactional
     public Task completeTask(Long id) {
-        Optional<Task> task = taskRepository.findById(id);
-        if (task.isPresent()) {
-            Task completedTask = task.get();
-            completedTask.setCompleted(true);
-            return taskRepository.save(completedTask);
-        }
-        return null;
+        Task task = taskRepository.findById(id)
+                .orElseThrow(() -> new TaskNotFoundException("Task not found with id: " + id));
+        task.setCompleted(true);
+        return taskRepository.save(task);
     }
 
     public long countActiveTasksByEnterprise(Enterprise enterprise) {
@@ -91,10 +106,16 @@ public class TaskService {
     }
 
     public List<Task> getRecentTasksByEnterprise(Enterprise enterprise) {
-        return taskRepository.findTop5ByEnterpriseOrderByDueDateDesc(enterprise);
+        if (enterprise == null) {
+            throw new InvalidTaskException("Enterprise cannot be null");
+        }
+        return taskRepository.findTop5ByEnterpriseAndCompletedFalseOrderByDueDateDesc(enterprise);
     }
 
     public List<Task> getRecentTasksByUser(User user) {
-        return taskRepository.findTop5ByAssignedUsersContainingOrderByDueDateAsc(user);
+        if (user == null) {
+            throw new InvalidTaskException("User cannot be null");
+        }
+        return taskRepository.findTop5ByAssignedUsersContainingAndCompletedFalseOrderByDueDateAsc(user);
     }
 }
