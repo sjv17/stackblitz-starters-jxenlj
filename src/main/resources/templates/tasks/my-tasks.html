@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tasko - My Tasks</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 py-6">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-bold text-gray-800">My Tasks</h1>
+            <a href="/dashboard" class="text-blue-600 hover:text-blue-800">Back to Dashboard</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="overflow-x-auto">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase">Title</th>
+                            <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase">Description</th>
+                            <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase">Due Date</th>
+                            <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                            <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr th:each="task : ${tasks}">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900" th:text="${task.title}"></td>
+                            <td class="px-6 py-4 text-sm text-gray-500" th:text="${task.description}"></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500" 
+                                th:text="${#temporals.format(task.dueDate, 'MMM dd, yyyy')}"></td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span th:if="${task.completed}" 
+                                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                    Completed
+                                </span>
+                                <span th:unless="${task.completed}" 
+                                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                    Pending
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <button th:if="${!task.completed}" 
+                                        th:onclick="'completeTask(' + ${task.id} + ')'"
+                                        class="text-blue-600 hover:text-blue-900 mr-3">
+                                    Complete
+                                </button>
+                                <a th:href="@{/tasks/view/{id}(id=${task.id})}" 
+                                   class="text-green-600 hover:text-green-900">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function completeTask(taskId) {
+            if (!confirm('Are you sure you want to mark this task as complete?')) {
+                return;
+            }
+            
+            fetch(`/tasks/${taskId}/complete`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="_csrf"]').content
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.reload();
+                } else {
+                    alert('Failed to complete task. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            });
+        }
+    </script>
+</body>
+</html>

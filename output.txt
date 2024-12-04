@@ -1,0 +1,220 @@
+------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[62,17] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[62,22] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[62,38] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[62,91] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[62,104] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[63,6] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[63,12] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[63,15] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[65,5] illegal start of expression
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[65,22] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[65,29] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[65,35] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[66,10] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[66,18] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[67,10] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[67,15] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[67,34] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[67,74] illegal start of expression
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[68,11] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[68,15] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[68,87] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[68,91] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[69,2] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[70,7] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[70,12] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[71,9] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[71,10] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[71,15] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[72,13] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[72,14] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[72,19] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[73,16] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[73,17] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[73,22] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[73,67] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[73,70] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[74,15] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[74,20] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[74,39] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[74,94] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[74,96] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[75,10] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[75,14] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[77,10] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[77,23] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[78,13] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[78,14] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[78,19] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[79,17] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[79,20] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[79,25] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[79,43] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[80,20] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[80,23] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[80,46] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[81,23] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[82,21] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[82,22] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[82,27] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,24] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,27] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,32] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,48] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,54] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,95] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,98] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,23] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,26] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,31] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,53] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,59] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,82] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,84] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[85,25] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[85,26] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[85,31] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[86,27] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[86,28] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[86,33] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[87,39] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[87,42] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[87,47] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[87,108] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[88,26] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[89,28] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[89,33] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[91,34] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[91,37] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[91,42] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[91,88] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[92,37] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[92,43] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[93,30] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[93,35] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[94,26] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[94,28] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[95,22] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[95,26] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[96,18] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[96,22] <identifier> expected
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.998 s
+[INFO] Finished at: 2024-11-05T03:31:02+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile) on project tasko: Compilation failure: Compilation failure: 
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[62,17] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[62,22] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[62,38] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[62,91] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[62,104] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[63,6] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[63,12] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[63,15] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[65,5] illegal start of expression
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[65,22] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[65,29] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[65,35] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[66,10] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[66,18] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[67,10] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[67,15] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[67,34] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[67,74] illegal start of expression
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[68,11] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[68,15] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[68,87] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[68,91] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[69,2] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[70,7] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[70,12] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[71,9] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[71,10] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[71,15] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[72,13] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[72,14] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[72,19] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[73,16] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[73,17] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[73,22] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[73,67] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[73,70] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[74,15] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[74,20] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[74,39] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[74,94] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[74,96] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[75,10] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[75,14] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[77,10] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[77,23] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[78,13] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[78,14] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[78,19] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[79,17] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[79,20] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[79,25] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[79,43] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[80,20] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[80,23] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[80,46] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[81,23] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[82,21] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[82,22] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[82,27] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,24] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,27] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,32] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,48] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,54] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,95] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[83,98] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,23] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,26] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,31] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,53] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,59] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,82] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[84,84] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[85,25] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[85,26] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[85,31] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[86,27] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[86,28] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[86,33] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[87,39] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[87,42] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[87,47] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[87,108] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[88,26] illegal start of type
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[89,28] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[89,33] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[91,34] > expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[91,37] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[91,42] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[91,88] ';' expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[92,37] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[92,43] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[93,30] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[93,35] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[94,26] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[94,28] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[95,22] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[95,26] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[96,18] <identifier> expected
+[ERROR] /home/sharon/Downloads/final16/src/main/java/com/example/controller/AttendanceController.java:[96,22] <identifier> expected
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+sharon@sharon-Aspire-V5-471:~/Downloads/final1
